@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.H CONSTRUCTIONS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <video id="background-video" autoplay loop muted <source src="images/bg.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="nav-li"><a href="http://127.0.0.1:5500/Home/index.html">HOME</a></li>
+                    <li class="nav-li"><a href="http://127.0.0.1:5500/Projects/index.html">PROJECTS</a></li>
+                    <li class="nav-li"><a href="http://127.0.0.1:5500/Services/index.html">SERVICES</a></li>
+                    <li class="nav-li"><a href="http://127.0.0.1:5500/Contact/index.html">CONTACT </a></li>
+                    <li class="nav-li"><a href="http://127.0.0.1:5500/About/index.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <div class="center-h1">
+                <div id="parent">
+                    QUINTESSENTIAL DEVS<div id="border"></div>
+                </div>
+            </div>
+            <p>FROM VISION TO REALITY</p>
+            <button class="button"> Services
+            </button>
+        </div>
+    </section>
+    <div class="bg-article">
+        <div class="article">
+            <div class="article-img">
+                <img src="images/omen.jpg">
+            </div>
+            <div class="article-text-box">
+                <h1>What We Provide</h1>
+                <p>These and many other services by your choice.</p>
+                <ul>
+                    <li><i class="fa-solid fa-mobile"></i> Fully Responsive Website</li>
+                    <li><i class="fa-solid fa-laptop-code"></i> Modern UI Design</li>
+                    <li><i class="fa-solid fa-film"></i> Lots Of Animations</li>
+                    <li><i class="fa-solid fa-video"></i> Smooth Transitions</li>
+                    <li><i class="fa-solid fa-clock"></i> In Less Than 3 Days</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <p>Albert Druu</p>
+        <h1>Very satisfied with the service the company provided. I couldn’t expect anything better. The team worked
+            just great and even exceeded our expectations.</h1>
+
+    </div>
+    <div class="footer">
+        <h1>QUINTESSENTIAL DEVS</h1>
+        <div class="footer-links">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Home/index.html">HOME</a></li>
+                <li><a href="http://127.0.0.1:5500/Projects/index.html">PROJECTS</a></li>
+                <li><a href="http://127.0.0.1:5500/Home/index.html">SERVICES</a></li>
+                <li><a href="http://127.0.0.1:5500/Contact/index.html">CONTACT </a></li>
+                <li><a href="http://127.0.0.1:5500/About/index.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <div class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+        </div>
+        <p>Copyright © 2023 All rights reserved | This website is made with <i class="fa-solid fa-heart fa-beat"></i> by
+            anonymous.com</p>
+    </div>
+    </footer>
+
+
+    <button onclick="topFunction()" id="myBtn" class="Btn" title="Go to top">
+        <i class="fa-solid fa-angle-up arrow"></i>
+    </button>
+
+
+    <script src=" app.js"></script>
+</body>
+
+</html>
