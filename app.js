@@ -66,3 +66,15 @@ function topFunction() {
 		'autoplay':'autoplay'
 	}).appendTo("body");
 });
+
+
+
+const fadeOut = () => {
+    const loaderWrapper = document.querySelector('loader')
+    loaderWrapper.classList.add('fade');
+}
+// window.addEventListener('load', fadeOut);
+
+  $(window).on('load', function (fadeOut) {
+    $('.loader').hide();
+  }) 
