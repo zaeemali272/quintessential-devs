@@ -10,11 +10,10 @@
     min-height: 110vh;
     width: 100%;
     /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(); */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(3, 5, 15, 0.9));
     background-position: center;
     background-size: cover;
     position: relative;
-
 }
 
 body{
@@ -388,18 +387,35 @@ nav img {
 .article {
     display: flex;
     background-color: #03050f;
-    color: #fff;
+    color: #ffffffd7;
     flex-wrap: nowrap;
+    height: 600px;
+    transition: 1.5s;
+    transform: translateY(400px);
+    opacity: 0;
+}
+
+.article.show {
+    transform: translateY(0);
+    opacity: 1;
+
 }
 
 
 .article-img img {
-    width: 690px;
-    height: 600px;
+    width: 700px;
+    justify-content: center;
+    margin: 65px 40px;
+    border-radius: 20px;
+    image-rendering:crisp-edges;
+    filter: contrast(105%);
+    box-shadow: 0px 0px 40px 40px #03050f;
+    /* filter: brightness(150%); */
+    
 }
 
 .article-text-box {
-    margin: 80px 40px;
+    margin: 45px 40px;
     padding: 0 20px;
     width: 50%;
     text-align: center;
@@ -464,15 +480,26 @@ nav img {
     justify-content: center;
     justify-items: center;
     color: rgb(255, 255, 255);
-
+   
 }
 
-.reviews h1 {
+
+
+
+.rev {
     text-transform: uppercase;
     font-family: 'Rubik Mono One', sans-serif;
     font-weight: 400;
     font-size: 30px;
     word-break: break-word;
+    transition: 1s;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.rev.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .reviews p {
@@ -544,7 +571,7 @@ nav img {
     font-size: 34px;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 30px;
-    color: #fff;
+    color: #ffffffd7;
     font-weight: 700;
 }
 

@@ -78,3 +78,40 @@ const fadeOut = () => {
   $(window).on('load', function (fadeOut) {
     $('.loader').hide();
   }) 
+
+
+
+//intersection animation
+
+const articles = document.querySelectorAll(".article")
+const revs = document.querySelectorAll(".rev")
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry =>{
+        entry.target.classList.toggle("show", entry.isIntersecting)
+
+//to stop the animation to repeat from downwards
+        if(entry.isIntersecting)    observer.unobserve(entry.target)
+    })
+}, {
+    threshold: 0.2,
+})
+
+articles.forEach(article => {
+    observer.observe(article)
+})
+
+const observerRev = new IntersectionObserver(entries => {
+    entries.forEach(entry =>{
+        entry.target.classList.toggle("show", entry.isIntersecting)
+
+//to stop the animation to repeat from downwards
+        if(entry.isIntersecting)    observerRev.unobserve(entry.target)
+    })
+}, {
+    threshold: 0.2,
+})
+
+revs.forEach(rev => {
+    observerRev.observe(rev)
+})
