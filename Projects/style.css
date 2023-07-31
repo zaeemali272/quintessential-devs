@@ -8,7 +8,7 @@
 
 body {
     background-color: #03050f;
-    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x:hidden; /* Hide horizontal scrollbar */
     /* scroll-behavior:smooth; */
 
 }
