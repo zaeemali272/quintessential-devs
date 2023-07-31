@@ -459,22 +459,22 @@ button:hover {
 @media(max-width: 768px) {
 
     .dots .dot:nth-child(1) {
-        left: 57%;
+        left: 55%;
         animation: dot-stage1 0.5s infinite;
     }
 
     .dots .dot:nth-child(2) {
-        left: 61%;
+        left: 59%;
         animation: dot-stage1 0.5s infinite;
     }
 
     .dots .dot:nth-child(3) {
-        left: 65%;
+        left: 63%;
         animation: dot-stage1 0.5s infinite;
     }
 
     .dots .dot:nth-child(4) {
-        left: 69%;
+        left: 67%;
         animation: dot-stage2 0.5s infinite;
     }
 

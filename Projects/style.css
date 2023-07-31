@@ -8,6 +8,7 @@
 
 body {
     background-color: #03050f;
+    overflow-y: hidden; /* Hide vertical scrollbar */
     /* scroll-behavior:smooth; */
 
 }
@@ -214,7 +215,7 @@ nav img {
 }
 
 .carousel {
-    padding: 10px 40px 40px 40px;
+    padding: 10px 40px 40px 20px;
     display: flex;
     flex-direction: row;
     /* display: flex; */
@@ -238,12 +239,12 @@ nav img {
 
 
 .carousel img {
-    width: 1200px;
+    width: 92vw;
     opacity: 90%;
     object-fit: cover;
     margin: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 40px 40px #010103;
+    box-shadow: 0px 0px 60px 40px #010103;
     /* scroll-snap-type:proximity; */
 
 }
@@ -881,22 +882,22 @@ nav img {
 @media(max-width: 768px) {
 
     .dots .dot:nth-child(1) {
-        left: 57%;
+        left: 55%;
         animation: dot-stage1 0.5s infinite;
     }
 
     .dots .dot:nth-child(2) {
-        left: 61%;
+        left: 59%;
         animation: dot-stage1 0.5s infinite;
     }
 
     .dots .dot:nth-child(3) {
-        left: 65%;
+        left: 63%;
         animation: dot-stage1 0.5s infinite;
     }
 
     .dots .dot:nth-child(4) {
-        left: 69%;
+        left: 67%;
         animation: dot-stage2 0.5s infinite;
     }
 
@@ -1106,7 +1107,7 @@ nav img {
     }
 
     .carousel img {
-        width: 365px;
+        width: 90vw;
         opacity: 90%;
         object-fit: cover;
         margin: 10px;
