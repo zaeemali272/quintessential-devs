@@ -16,11 +16,11 @@
     position: relative;
 }
 
-body{
+body {
     background-color: #03050f;
 }
 
-.loader{
+.loader {
     z-index: 99999;
     background-color: #03050f;
     opacity: 0.35s;
@@ -35,7 +35,7 @@ body{
     justify-content: center;
 }
 
-.fade{
+.fade {
     opacity: 0;
     visibility: hidden;
 }
@@ -94,7 +94,7 @@ body{
     }
 }
 
-.all-dots{
+.all-dots {
     /* z-index: 99999; */
     /* background-color: #03050f; */
     /* transition: opacity 0.35s, visibility 1s; */
@@ -209,7 +209,7 @@ nav img {
     text-decoration: none;
     font-size: 13px;
     font-weight: 500;
-    text-shadow: 1px 1px 2px  #03050f;
+    text-shadow: 1px 1px 2px #03050f;
 
 
 }
@@ -253,7 +253,7 @@ nav img {
     margin: 10px 0 40px;
     font-size: 25px;
     color: rgba(0, 255, 0, 0.856);
-    text-shadow: 1px 1px 2px  #03050f;
+    text-shadow: 1px 1px 2px #03050f;
 
 }
 
@@ -270,7 +270,7 @@ nav img {
     justify-content: center;
     margin: auto;
     font-weight: 700;
-    text-shadow: 1px 1px 2px  #03050f;
+    text-shadow: 1px 1px 2px #03050f;
 
 
 }
@@ -313,12 +313,6 @@ nav img {
     to {
         border-bottom-color: transparent;
     }
-}
-
-
-
-.fa {
-    display: none;
 }
 
 
@@ -389,10 +383,11 @@ nav img {
     background-color: #03050f;
     color: #ffffffd7;
     flex-wrap: nowrap;
-    height: 600px;
+    /* height: 600px; */
     transition: 1.5s;
     transform: translateY(400px);
     opacity: 0;
+    padding: 60px 0px;
 }
 
 .article.show {
@@ -407,11 +402,11 @@ nav img {
     justify-content: center;
     margin: 65px 40px;
     border-radius: 20px;
-    image-rendering:crisp-edges;
+    image-rendering: crisp-edges;
     filter: contrast(105%);
     box-shadow: 0px 0px 40px 40px #03050f;
     /* filter: brightness(150%); */
-    
+
 }
 
 .article-text-box {
@@ -457,12 +452,12 @@ nav img {
 
 }
 
-.article-text-box i{
+.article-text-box i {
     font-size: 20px;
     padding: 10px;
 }
 
-.article-text-box i:hover{
+.article-text-box i:hover {
     opacity: 80%;
     transition: 0.2s;
 }
@@ -480,7 +475,7 @@ nav img {
     justify-content: center;
     justify-items: center;
     color: rgb(255, 255, 255);
-   
+
 }
 
 
@@ -697,6 +692,291 @@ nav img {
         width: 100%;
         height: 65vh;
     }
+
+    #parent {
+        height: 55px;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 34px;
+        color: rgba(255, 255, 255, .70);
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px #03050f;
+
+
+    }
+
+    #border {
+        border-bottom: solid 3px rgba(0, 255, 0, 0.856);
+        position: absolute;
+        right: -7px;
+        width: 20px;
+    }
+
+    /* Animation */
+    #parent {
+        animation: animated-text 2.5s steps(30, end) 0.5s 1 normal both
+    }
+
+    #border {
+        animation: animated-cursor 600ms steps(30, end) infinite;
+    }
+
+    /* text animation */
+
+    @keyframes animated-text {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 430px;
+        }
+    }
+
+    /* cursor animations */
+
+    @keyframes animated-cursor {
+        from {
+            border-bottom-color: rgba(0, 255, 0, .75);
+        }
+
+        to {
+            border-bottom-color: transparent;
+        }
+    }
+
+    .text-box p {
+        margin: 10px 0 40px;
+        font-size: 18px;
+        color: rgba(0, 255, 0, 0.856);
+        text-shadow: 1px 1px 2px #03050f;
+
+    }
+
+    .dots .dot:nth-child(1) {
+        left: 57%;
+        animation: dot-stage1 0.5s infinite;
+    }
+
+    .dots .dot:nth-child(2) {
+        left: 61%;
+        animation: dot-stage1 0.5s infinite;
+    }
+
+    .dots .dot:nth-child(3) {
+        left: 65%;
+        animation: dot-stage1 0.5s infinite;
+    }
+
+    .dots .dot:nth-child(4) {
+        left: 69%;
+        animation: dot-stage2 0.5s infinite;
+    }
+
+    .article-img img {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .article-img img {
+        width: 430px;
+        justify-content: center;
+        margin: 55px 20px;
+        border-radius: 20px;
+        image-rendering: crisp-edges;
+        filter: contrast(105%);
+        box-shadow: 0px 0px 40px 40px #03050f;
+        /* filter: brightness(150%); */
+
+    }
+
+    .article-text-box h1 {
+        font-weight: 700;
+        font-size: 34px;
+        margin-bottom: 0.3em;
+        margin-top: 1.2em;
+    }
+
+    .article-text-box p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 3.5em;
+    }
+
+    .article-text-box ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 40px 0 0 15px;
+        /* padding-left: 20%; */
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .article-text-box li {
+        padding: 5px 20px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .article-text-box i {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .article-text-box i:hover {
+        opacity: 80%;
+        transition: 0.2s;
+    }
+
+
+    .reviews {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #03050f), url('images/banner.jpg');
+        background-attachment: fixed;
+        padding: 150px 50px;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .rev {
+        text-transform: uppercase;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        word-break: break-word;
+        transition: 1s;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    .rev.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .reviews p {
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+
+
+    .footer {
+        min-height: 30vh;
+        background-color: #03050f;
+        padding: 60px 35px 40px 35px;
+        text-align: center;
+    }
+
+    .footer h1 {
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 30px;
+        color: #ffffffd7;
+        font-weight: 700;
+    }
+
+    .footer p {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 10px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .footer-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 4px;
+        position: relative;
+    }
+
+    .footer-links ul li a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .footer-links a:hover {
+        color: rgba(255, 255, 255, 0.329);
+        transition: .5s;
+
+    }
+
+    .social {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .social div {
+        padding: 15px;
+    }
+
+    .social i {
+        font-size: 18px;
+        color: #d3524e;
+        padding: 13px;
+        border: 1px solid #d3524e;
+        border-radius: 50%;
+
+    }
+
+    .social i:hover {
+        border: 1px solid #da2822;
+        color: #da2822;
+        box-shadow: 0px 0px 12px 2px #c73934;
+        transition: .5s;
+        /* background-color: #201202; */
+    }
+
+    #myBtn {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        right: 30px;
+        /* Place the button 30px from the right */
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        background: linear-gradient(#00ff00c9, #00ff00);
+        /* Set a background color */
+        color: #03050f;
+        /* Text color */
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        /* Some padding */
+        border-radius: 50%;
+        /* Rounded corners */
+        justify-content: center;
+        align-items: center;
+        transition-duration: .7s;
+        font-size: 1.3em;
+        width: 40px;
+        height: 40px;
+    }
+
+
 }
 
 
