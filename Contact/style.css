@@ -310,7 +310,7 @@ button:hover {
     box-shadow: 0 0 15px 0 rgba(255, 36, 0, 1);
 }
 
-.form-container h1{
+.form-container h1 {
     color: #fff;
     padding: 25px;
     text-align: center;
@@ -560,38 +560,7 @@ button:hover {
         /* background-color: #201202; */
     }
 
-    #myBtn {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Fixed/sticky position */
-        bottom: 20px;
-        /* Place the button at the bottom of the page */
-        right: 30px;
-        /* Place the button 30px from the right */
-        z-index: 99;
-        /* Make sure it does not overlap */
-        border: none;
-        /* Remove borders */
-        outline: none;
-        /* Remove outline */
-        background: linear-gradient(#00ff00c9, #00ff00);
-        /* Set a background color */
-        color: #03050f;
-        /* Text color */
-        cursor: pointer;
-        /* Add a mouse pointer on hover */
-        /* Some padding */
-        border-radius: 50%;
-        /* Rounded corners */
-        justify-content: center;
-        align-items: center;
-        transition-duration: .7s;
-        font-size: 1.3em;
-        width: 40px;
-        height: 40px;
-    }
-
+    
     .pikachu {
         display: flex;
         justify-content: center;
@@ -617,7 +586,7 @@ button:hover {
         /* padding-top: 10px; */
         font-size: 0.7rem;
     }
-    
+
     input,
     textarea {
         width: 90%;
@@ -630,7 +599,7 @@ button:hover {
         margin: auto;
         display: flex;
     }
-    
+
     button {
         width: 95%;
         padding: 15px;
@@ -649,14 +618,14 @@ button:hover {
         justify-content: center;
         align-items: center;
         margin: 15px auto;
-    
+
     }
-    
+
     button:hover {
         color: red;
         background: #fff;
     }
-    
+
     .errors {
         display: block;
         color: red;
@@ -664,7 +633,7 @@ button:hover {
         text-align: left;
         padding-left: 4%;
     }
-    
+
     .error {
         -webkit-transition: .2s;
         -moz-transition: .2s;
@@ -673,13 +642,13 @@ button:hover {
         transition: .2s;
         box-shadow: 0 0 15px 0 rgba(255, 36, 0, 1);
     }
-    
-    .form-container h1{
+
+    .form-container h1 {
         color: #fff;
         padding: 25px;
         text-align: center;
     }
-    
+
 
 
 }
