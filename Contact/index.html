@@ -35,55 +35,69 @@
         </div>
     </div>
     <div class="header">
-        <video id="background-video" autoplay loop muted <source src="images/bg.mp4" type="video/mp4">
-        </video>
         <nav>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li class="nav-li"><a href="https://zaeemali272.github.io/quintessential-devs/">HOME</a></li>
-                    <li class="nav-li"><a href="https://zaeemali272.github.io/quintessential-devs/Projects/">PROJECTS</a></li>
-                    <li class="nav-li"><a href="https://zaeemali272.github.io/quintessential-devs/Services/">SERVICES</a></li>
-                    <li class="nav-li"><a href="https://zaeemali272.github.io/quintessential-devs/Contact/">CONTACT </a></li>
+                    <li class="nav-li"><a
+                            href="https://zaeemali272.github.io/quintessential-devs/Projects/">PROJECTS</a></li>
+                    <li class="nav-li"><a
+                            href="https://zaeemali272.github.io/quintessential-devs/Services/">SERVICES</a></li>
+                    <li class="nav-li"><a href="https://zaeemali272.github.io/quintessential-devs/Contact/">CONTACT</a>
+                    </li>
                 </ul>
             </div>
             <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
-            <div class="center-h1">
-                <div id="parent">
-                    QUINTESSENTIAL DEVS<div id="border"></div>
-                </div>
-            </div>
-            <p>FROM VISION TO REALITY</p>
-            <button class="button"> Services
-            </button>
+        <div class="pikachu">
+            <img src="../images/pikachu.gif" alt="">
         </div>
     </div>
-    <div class="bg-article">
-        <div class="article">
-            <div class="article-img">
-                <img src="images/omen.jpg">
-            </div>
-            <div class="article-text-box">
-                <h1>What We Provide</h1>
-                <p>These and many other services by your choice.</p>
-                <ul>
-                    <li><i class="fa-solid fa-mobile"></i> Fully Responsive Website</li>
-                    <li><i class="fa-solid fa-laptop-code"></i> Modern UI Design</li>
-                    <li><i class="fa-solid fa-film"></i> Lots Of Animations</li>
-                    <li><i class="fa-solid fa-video"></i> Smooth Transitions</li>
-                    <li><i class="fa-solid fa-clock"></i> In Less Than 3 Days</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="reviews">
-        <p>Albert Druu</p>
-        <h1 class="rev">Very satisfied with the service the company provided. I couldn’t expect anything better. The team worked
-            just great and even exceeded our expectations.</h1>
 
+
+    action="#"
+
+
+    <div class="form-container">
+        <h1>Contact Form</h1>
+        <form name="contactForm" method="post" onsubmit="return validate()"  action="https://formspree.io/f/mgejokvn"
+        method="POST">
+            <label for="name">* Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off"> 
+            <span class="errors"></span><br>
+
+            <label for="email">* Email</label>
+            <input type="text" placeholder="Email address" id="email" name="email" autocomplete="off">
+            <span class="errors"></span><br>
+
+            <label for="phone">* Phone</label>
+            <input type="text" placeholder="Phone number" id="phone" name="phone" autocomplete="off">
+            <span class="errors"></span><br>
+            
+            <label for="subject">* Phone</label>
+            <input type="text" placeholder="Subject" id="subject" name="subject" autocomplete="off">
+            <!-- <span class="errors"></span> -->
+            <br>
+
+            <label for="message">* Message</label>
+            <textarea placeholder="Your message" cols="132" rows="5" name="message" id="message" autocomplete="off"></textarea>
+            <span class="errors"></span><br>
+
+            <button type="submit" value="Submit">Submit</button>
+        </form>
     </div>
+
+
+
+
+
+
+
+
+
+
+
     <div class="footer">
         <h1>QUINTESSENTIAL DEVS</h1>
         <div class="footer-links">
