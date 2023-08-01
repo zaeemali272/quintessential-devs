@@ -697,6 +697,7 @@ button:hover {
         border-radius: 50px;
         display: flex;
         z-index: 99;
+        justify-content: center;
     }
 
     .wrapper ul {

@@ -256,10 +256,21 @@ nav img {
     padding: 50px 40px 40px 40px;
 }
 
-.ph h1 {
+.ph a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.ph span {
     color: white;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
 
 }
 
@@ -731,17 +742,6 @@ nav img {
     object-fit: contain;
     opacity: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
