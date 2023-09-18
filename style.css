@@ -366,7 +366,7 @@ nav img {
   color: #ffffffd7;
   flex-wrap: nowrap;
   /* height: 600px; */
-  transition: 1.5s;
+  transition: 1s;
   transform: translateY(400px);
   opacity: 0;
   padding: 60px 0px;
