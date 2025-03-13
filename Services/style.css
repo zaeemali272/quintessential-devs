@@ -334,7 +334,7 @@ nav img {
 
 .footer {
     min-height: 30vh;
-    background-color: #02020c;
+    background-color: transparent;
     padding: 60px 40px 20px 40px;
     text-align: center;
     border-top: 1px solid #0e0e294b;
