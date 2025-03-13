@@ -9,8 +9,8 @@
 }
 
 html {
-  cursor: url('assets/cat-normal.ico'), default;
-  cursor: url('assets/cat-pointer.ico'), pointer;
+  cursor: url('assets/cat-normal.ico'), auto;
+  /* cursor: url('assets/cat-pointer.ico'), pointer; */
 
 }
 
