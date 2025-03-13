@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quintessential Devs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader-wrapper">
+            <div class="packman"></div>
+            <div class="all-dots">
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li class="nav-li"><a href="https://zaeemali272.github.io/quintessential-devs-new/">HOME</a></li>
+                    <li class="nav-li"><a
+                            href="https://zaeemali272.github.io/quintessential-devs/Projects/">PROJECTS</a></li>
+                    <li class="nav-li"><a
+                            href="https://zaeemali272.github.io/quintessential-devs/Services/">SERVICES</a></li>
+                    <li class="nav-li"><a href="https://zaeemali272.github.io/quintessential-devs/Contact/">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <ul>
+                    <li>
+                      <a href="https://zaeemali272.github.io/quintessential-devs/"><i class="fa-solid fa-house"></i>
+                      </a>
+            
+                    </li>
+                    <li><a href="https://zaeemali272.github.io/quintessential-devs/Projects/"><i class="fa-solid fa-laptop-code"></i>
+                      </a>
+            
+                  </li>
+                    <li><a href="https://zaeemali272.github.io/quintessential-devs/Services/"><i class="fa-solid fa-bell fa-shake"></i>
+                      </a>
+            
+                  </li>
+                    <li><a href="https://zaeemali272.github.io/quintessential-devs/Contact/"><i class="fa-solid fa-address-book"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pikachu">
+            <img src="../images/pikachu.gif" alt="">
+        </div>
+    </div>
+
+    <!-- From Uiverse.io by mrhyddenn --> 
+<div class="uiverse">
+    <span class="tooltip">Call Me</span>
+    <span>+92 334 166 038</span>
+</div>
+
+    <div class="form-container">
+        <h1>Contact Form</h1>
+        <form name="contactForm" method="post" onsubmit="return validate()"  action="https://formspree.io/f/mgejokvn"
+        method="POST">
+            <label for="name">* Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off"> 
+            <span class="errors"></span>
+
+            <label for="email">* Email</label>
+            <input type="text" placeholder="Email address" id="email" name="email" autocomplete="off">
+            <span class="errors"></span>
+
+            <label for="phone">* Phone</label>
+            <input type="text" placeholder="Phone number" id="phone" name="phone" autocomplete="off">
+            <span class="errors"></span>
+            
+            <label for="subject">* Subject</label>
+            <input style="margin-bottom: 10px;" type="text" placeholder="Subject" id="subject" name="subject" autocomplete="off">
+            <!-- <span class="errors"></span> -->
+            
+
+            <label for="message">* Message</label>
+            <textarea placeholder="Your message" cols="132" rows="5" name="message" id="message" autocomplete="off"></textarea>
+            <span class="errors"></span>
+
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <h1>QUINTESSENTIAL DEVS</h1>
+        <div class="footer-links">
+            <ul>
+                <li><a href="https://zaeemali272.github.io/quintessential-devs/">HOME</a></li>
+                <li><a href="https://zaeemali272.github.io/quintessential-devs/Projects/">PROJECTS</a></li>
+                <li><a href="https://zaeemali272.github.io/quintessential-devs/Services/">SERVICES</a></li>
+                <li><a href="https://zaeemali272.github.io/quintessential-devs/Contact/">CONTACT </a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <div class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+        </div>
+        <p>Copyright © 2023 All rights reserved | This website is made with <i class="fa-solid fa-heart fa-beat"></i> by
+            anonymous.com</p>
+    </div>
+    </footer>
+
+
+    <button onclick="topFunction()" id="myBtn" class="Btn" title="Go to top">
+        <i class="fa-solid fa-angle-up arrow"></i>
+    </button>
+
+
+    <script src=" app.js"></script>
+</body>
+
+</html>
